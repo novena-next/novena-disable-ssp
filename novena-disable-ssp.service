@@ -1,0 +1,10 @@
+[Unit]
+Description=Disable Bluetooth SSP feature
+
+[Service]
+Type=forking
+ExecStart=/usr/sbin/novena-disable-ssp
+PIDFile=/var/run/novena-disable-ssp.pid
+
+[Install]
+WantedBy=bluetooth.target
