@@ -1,8 +1,8 @@
 /novena-disable-ssp
-/novena-disable-ssp.1
 *.swp
 *.swo
 *~
+/debian/files
 /debian/novena-disable-ssp
 /debian/novena-disable-ssp.debhelper.log
 /debian/novena-disable-ssp.substvars
