@@ -14,3 +14,14 @@ when it sees them.
 This may be due to a bug in the adapter, where different USB endpoints
 mean that encrpytion data can be broadcast out-of-order.  A patch was
 submitted to Linux in 2011, but no action was taken.
+
+
+Building
+--------
+
+To build the Debian package, check out the code and use git-buildpackage.
+Note that this script will output the resulting packages into the directory
+above the current one.  Specify a tag with --git-upstream-tag, and possibly
+-us -uc.  E.g.:
+
+    git-buildpackage -us -uc --git-upstream-tag=v1.0
