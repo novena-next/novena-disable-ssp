@@ -1,0 +1,17 @@
+Source: novena-disable-ssp
+Section: misc
+Priority: optional
+Maintainer: unknown <xobs@kosagi.com>
+Build-Depends: debhelper (>= 9), libbluetooth-dev (>= 3)
+Standards-Version: 3.9.5
+Homepage: http://kosagi.com
+Vcs-Git: git://github.com/xobs/novena-disable-ssp.git
+Vcs-Browser: http://github.com/xobs/novena-disable-ssp
+
+Package: novena-disable-ssp
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Novena Bluetooth SSP disabler
+ SSP is buggy on a lot of USB Bluetooth devices, and can make pairing a
+ Bluetooth keyboard very tedious.  This program simply exists to disable
+ SSP on any Bluetooth adapter it detects.
