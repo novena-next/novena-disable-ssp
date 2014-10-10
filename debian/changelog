@@ -1,3 +1,9 @@
+novena-disable-ssp (1.1-1) unstable; urgency=medium
+
+  * Move to using Debian helpers for systemd support
+
+ -- Sean Cross <xobs@kosagi.com>  Fri, 10 Oct 2014 14:30:05 +0800
+
 novena-disable-ssp (1.0-1) unstable; urgency=low
 
   * Initial release

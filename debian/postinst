@@ -1,7 +1,0 @@
-#!/bin/sh
-set -e
-if [ "$1" = configure ] ; then
-	deb-systemd-helper enable novena-disable-ssp.service
-fi
-#DEBHELPER#
-exit 0

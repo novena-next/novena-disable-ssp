@@ -1,3 +1,2 @@
 usr/sbin/novena-disable-ssp
-lib/systemd/system/novena-disable-ssp.service
 usr/share/man/man1/novena-disable-ssp.1

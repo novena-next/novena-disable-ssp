@@ -8,5 +8,4 @@ include /usr/share/dpkg/default.mk
 override_dh_install:
 
 %:
-	dh $@ 
-
+	dh $@ --with=systemd

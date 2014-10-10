@@ -1,0 +1,2 @@
+novena-disable-ssp: init.d-script-not-marked-as-conffile etc/init.d/novena-disable-ssp
+novena-disable-ssp: init.d-script-not-included-in-package etc/init.d/novena-disable-ssp
