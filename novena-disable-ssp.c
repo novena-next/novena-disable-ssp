@@ -8,12 +8,11 @@
 #include <string.h>
 #include <sys/types.h>
 #include <fcntl.h>
+#include <endian.h>
 #include <bluetooth/bluetooth.h>
 #include <bluetooth/hci.h>
 #include <bluetooth/hci_lib.h>
 #include <syslog.h>
-
-#include "swap.h"
 
 #define PIDFILE_NAME "/var/run/novena-disable-ssp.pid"
 
@@ -146,7 +145,7 @@ void packet_control(struct timeval *tv, uint16_t index, uint16_t opcode,
 			return;
 		}
 
-		settings = get_le32(data);
+		settings = le32toh(data);
 		if (is_debug)
 			fprintf(stderr, "New settings: 0x%4.4x\n", settings);
 
@@ -220,9 +219,9 @@ static void run(int fd)
 			}
 		}
 
-		opcode = le16_to_cpu(hdr.opcode);
-		index  = le16_to_cpu(hdr.index);
-		pktlen = le16_to_cpu(hdr.len);
+		opcode = le16toh(hdr.opcode);
+		index  = le16toh(hdr.index);
+		pktlen = le16toh(hdr.len);
 
 		packet_control(tv, index, opcode, buf, pktlen);
 	}
