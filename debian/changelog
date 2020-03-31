@@ -1,3 +1,22 @@
+novena-disable-ssp (1.3-1) unstable; urgency=medium
+
+  [ Sean Cross ]
+  * debian: Relicnse to BSD-3-clause
+
+  [ Jookia ]
+  * novena-disable-ssp: Replace swap.h with endian.h
+  * debian: Mark pkg-config as a dependency
+  * debian: Set myself as maintainer
+
+ -- Jookia <contact@jookia.org>  Tue, 31 Mar 2020 20:58:59 +1100
+
+novena-disable-ssp (1.2-1) unstable; urgency=medium
+
+  [ Sean Cross ]
+  * debian: Relicnse to BSD-3-clause
+
+ -- Jookia <contact@jookia.org>  Tue, 31 Mar 2020 20:57:52 +1100
+
 novena-disable-ssp (1.1-1) unstable; urgency=medium
 
   * Move to using Debian helpers for systemd support
